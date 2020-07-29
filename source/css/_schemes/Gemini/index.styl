@@ -1,3 +1,24 @@
+body {
+    background-image:url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.headband {
+    height: 3px;
+    background: #49b1f5;
+}
+
+.post-body p a {
+  color: #428bca;
+  border-bottom: none;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+  }
+}
+
 @import '../Pisces/_layout';
 @import '../Pisces/_header';
 @import '../Pisces/_menu';
@@ -27,6 +48,7 @@ $use-seo = hexo-config('seo');
 // Desktop layout styles.
 // ==================================================
 // Post blocks.
+
 .content-wrap {
   background: initial;
   box-shadow: initial;

@@ -1,4 +1,14 @@
 {%- if page.comments %}
+<div class="comments">
+    <script src="https://utteranc.es/client.js"
+        repo="Naive-Cat/hexo-blog-utterance"
+        issue-term="title"
+        label="utterances"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </div>
   {%- if theme.injects.comment.length == 1 %}
     {%- set inject_item = theme.injects.comment[0] %}
     {{ partial(inject_item.layout, inject_item.locals, inject_item.options) }}
